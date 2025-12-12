@@ -1,0 +1,268 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: 'Inter';
+    background: linear-gradient(90deg, black, rgb(5, 5, 134),black);
+}
+/*Menu*/
+.flex-navbar{
+    width: 80%;
+    background: linear-gradient(90deg, black, rgb(5, 5, 134),black);
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border: 1px solid;
+    border-color: red;
+}
+.flex-menu{
+    display: flex;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+.flex-menu li{
+    list-style: none;
+    padding: 25px;
+}
+.flex-menu a{
+    text-decoration: none;
+    font-size: x-large;
+    color: #fff;
+    border-bottom: 1.2px solid;
+    border-color: #fff;
+}
+.flex-menu a:hover{
+    text-decoration: none;
+    font-size: x-large;
+    color: red;
+    border-bottom: 1.2px solid;
+    border-color: red;
+    transition: all 0.2s;
+    
+}
+/*Bnner*/
+.flex-banner{
+    width: 80%;
+    margin: auto;
+}
+.flex-banner img{
+    width: 100%;
+}
+/*Catagory*/
+.flex-line{
+    width: 80%;
+    margin: auto;
+    margin-top: 1%;
+    /*background: linear-gradient(90deg, black, rgb(5, 5, 134),black);*/
+    /*text-align: center;*/
+}
+.flex-line h3{
+    padding: 10px;
+    color: #fff;
+    border-bottom: solid;
+    border-color: red;
+}
+/*Container*/
+.flex-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+div.gallery {
+    border: 2px solid red;
+    background-color: #fff;
+  }
+  
+  div.gallery:hover {
+    border: 1px solid red;
+    cursor: pointer;
+  }
+  
+  div.gallery img {
+    padding: 15px 0px;
+    width: 100%;
+    height: auto;
+  }
+  div.gallery img:hover {
+    width: 100%;
+    height: auto;
+    transform: scale(1.05);
+  }
+
+  .content-dis p{
+    font-size: small;
+    padding: 0px 5px;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .responsive {
+    padding: 10px 6px;
+    width: 24.99999%;
+
+  }
+  /*Price*/
+  .price p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: red;
+    text-align: center;
+    font-size: x-large;
+  }
+  /*Footer*/
+  footer{
+    padding: 20px;
+  }
+  /*Scroll*/
+  .flex-scroll {
+    width: 80%;
+    width: 100%;
+    padding: 10px 15px;
+    margin-top: 1%;
+    background: linear-gradient(90deg, black, rgb(5, 5, 134),black);
+    border: 1.5px solid red;
+    overflow: auto;
+    white-space: nowrap;
+    }
+    .flex-scroll img {
+        width: 33%;
+        padding: 0px 30px;
+        border-right: 1px solid red;
+    }
+    #first-scroll{
+        border-left: 1px solid red;
+    }
+    /*BannerScroll*/
+    .flex-banner-scroll{
+        width: 80%;
+        width: 100%;
+        padding: 0px 0px;
+        margin-top: 1px;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    .flex-banner-scroll img{
+        padding: 5px 0px;
+        width: 100%;
+    }
+@media screen and (max-width: 1024px) {
+    .flex-navbar{
+        width: 98%;
+        border: 1px solid;
+        border-color: red;
+    }
+    .flex-menu{
+        margin-left: -3%;
+    }
+    .flex-menu a{
+        font-size: xx-large;
+    }
+    .flex-menu a:hover{
+        font-size: xx-large;
+    }
+    .search-btn-01{
+        margin-top: 2.7%;
+    }
+    /*banner*/
+    .flex-banner{
+        width: 98%;
+    }
+    /*Catagory*/
+    .flex-line{
+        width: 98%;
+        margin-top: -2%;
+    }
+    /*Container*/
+    .flex-container{
+        width: 100%;
+    }
+    /*Scroll*/
+    .flex-scroll{
+        width: 95%;
+    }
+    .flex-scroll img{
+        padding: 10px 10px;
+        width: 32.8%;
+    }
+    /*Banner Scroll*/
+    .flex-banner-scroll{
+        width: 100%;
+        padding: 5px 0px;
+    }
+    .flex-banner-scroll img{
+        width: 100%;
+        padding: 0px 7px;
+    }
+}
+@media screen and (max-width :600px) {
+    .flex-navbar{
+        border: 1px solid;
+        border-color: red;
+        padding: 10px;
+    }
+    .flex-menu li{
+        padding: 15px;
+    }
+    .flex-menu a{
+        font-size: large;
+    }
+    .flex-menu a:hover{
+        font-size: large;
+    }
+    .search-btn-01{
+        display: none;
+    }
+    .content-dis p{
+        font-size: x-small;
+        padding: 0px 0px;
+    }
+    .responsive{
+        width: 50%;
+        padding: 15px 5px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    div.gallery img {
+        padding: 15px 5px;
+        width: 100%;
+        height: auto;
+    }
+    /*Scroll*/
+    .flex-scroll{
+        width: 95%;
+    }
+}
+@media screen and (max-width : 320px) {
+    .flex-menu{
+        width: 98%;
+        margin-left: 5px;
+    }
+    .flex-menu li{
+        padding: 12px;
+    }
+    .flex-menu a{
+        font-size: x-small;
+    }
+    .flex-menu a:hover{
+        font-size: x-small;
+    }
+    .flex-menu a:hover{
+        font-size: x-small;
+    }
+    footer{
+        font-size: small;
+    }
+    /*Scroll*/
+    .flex-scroll{
+        width: 95%;
+    }
+    .flex-scroll img{
+        width: 50%;
+    }
+}
